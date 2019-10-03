@@ -1,0 +1,9 @@
+--- icd2-osso-ic-dev-2.0.1/configure.ac.orig	2019-07-27 10:57:30.000000000 +0200
++++ icd2-osso-ic-dev-2.0.1/configure.ac	2019-10-03 05:45:28.790801551 +0200
+@@ -1,5 +1,4 @@
+-AC_INIT([Internet Connectivity daemon 2 OSSO IC OSS compatibility headers], patsubst(esyscmd([dpkg-parsechangelog | sed -n '/^Version: \(.*\)$/ {s//\1/;p}']), [
+-]),[],[icd2-osso-ic-dev])
++AC_INIT([Internet Connectivity daemon 2 OSSO IC OSS compatibility headers], [@VERSION@], [],[icd2-osso-ic-dev])
+ AM_CONFIG_HEADER(config.h)
+ AM_INIT_AUTOMAKE([foreign])
+ AM_MAINTAINER_MODE
